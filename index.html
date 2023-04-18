@@ -13,7 +13,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive gym website - Bedimcode</title>
+        <title>BeingFit</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -26,7 +26,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">Home</a>
+                            <a href="#home" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#program" class="nav__link">Program</a>
@@ -37,12 +37,13 @@
                         <li class="nav__item">
                             <a href="#pricing" class="nav__link">Pricing</a>
                         </li>
-
-                        <div class="nav__link">
-                            <a href="#footer" class="button nav__button">
-                                Register Now
-                            </a>
-                        </div>
+                        <li class="nav__item">
+                            <div class="nav__link">
+                                <a href="#footer" class="button nav__button">
+                                    Register Now
+                                </a>
+                            </div>
+                        </li>
                     </ul>
 
                     <div class="nav__close" id="nav-close">
@@ -122,6 +123,7 @@
                             </p>
 
                             <a href="#" class="program__button">
+                                <span>see more</span>
                                 <i class="ri-arrow-right-line"></i>
                             </a>
                         </article>
@@ -139,6 +141,7 @@
                             </p>
 
                             <a href="#" class="program__button">
+                                <span></span>
                                 <i class="ri-arrow-right-line"></i>
                             </a>
                         </article>
@@ -156,6 +159,7 @@
                             </p>
 
                             <a href="#" class="program__button">
+                                <span></span>
                                 <i class="ri-arrow-right-line"></i>
                             </a>
                         </article>
@@ -173,6 +177,7 @@
                             </p>
 
                             <a href="#" class="program__button">
+                                <span></span>
                                 <i class="ri-arrow-right-line"></i>
                             </a>
                         </article>
@@ -221,9 +226,9 @@
                     <div class="choose__images">
                         <img src="assets/img/choose-img.png" alt="choose image" class="choose__img">
                         
-                        <div class="choose__triangle choose__triangle-1"></div>
-                        <div class="choose__triangle choose__triangle-2"></div>
-                        <div class="choose__triangle choose__triangle-3"></div>
+                        <div class="choose__triangle home__triangle-1"></div>
+                        <div class="choose__triangle home__triangle-2"></div>
+                        <div class="choose__triangle home__triangle-3"></div>
                     </div>
                 </div>
             </div>
@@ -396,7 +401,7 @@
             <div class="footer__container container grid">
                 <div>
                     <a href="#" class="footer__logo">
-                        <img src="assets/img/logo-nav.png" alt=""> BEROTOT
+                        <img src="assets/img/logo-nav.png" alt=""> Being Fit
                     </a>
                     <p class="footer__description">
                         Subscribe for company <br> updates below.
@@ -485,13 +490,13 @@
             <div class="container">
             <div class="footer__group">
                 <ul class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer__social-link">
                     <i class="ri-facebook-circle-fill"></i>
                     </a>
-                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                    <a href="https://twitter.com/" target="_blank" rel="noopener" class="footer__social-link">
                     <i class="ri-twitter-fill"></i>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer__social-link">
                     <i class="ri-instagram-line"></i>
                     </a>
                 
@@ -499,32 +504,27 @@
 
 
                 <span class="footer__copy">
-                    $#169; Copyright Bedimcode. All rights reserved
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione officia aliquam sapiente inventore, sed,eniam fugiat minima.
                 </span>
             </div>
         </div>
     </footer>
 
-        
-        
-        
-        
-        
-        
-        
-        
-        <footer class="footer section" id="footer">
-            
-        </footer>
+    
 
         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
 
 
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
+
 
         <!--=============== EMAIL JS ===============-->
-        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>

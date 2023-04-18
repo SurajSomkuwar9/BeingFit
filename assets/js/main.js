@@ -39,19 +39,56 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+const scrollActive = () =>{
+const scrollY = window.pageYOffset
+ sections. forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id'),
+            sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                sectionsClass.classist.add('active-link')
+        }else{
+                sectionsClass.classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+    const scrollUp = document.getElementById('scroll-up')
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') :
+        scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+sr.reveal('.home__data, .footer__container, .footer__group')
+sr.reveal('.home__img', {delay: 700, origin: 'bottom'})
+sr.reveal('.logos__img, .program__card, .pricing__card', {interval:100})
+sr.reveal('.choose__img, .calculate__content', {origin: 'left'})
+sr.reveal('.choose__content .calculate__img', {origin: 'right'})
+
 
 
 /*=============== CALCULATE JS ===============*/
 const calculateForm = document.getElementById('calculate-form'),
-      calculateCm = document.getElementById('calculator-cm'),
-      calculateKg = document.getElementById('calculator-kg'),
-      calculateMessage = document.getElementById('calculate-message')
+    calculateCm = document.getElementById('calculator-cm'),
+    calculateKg = document.getElementById('calculator-kg'),
+    calculateMessage = document.getElementById('calculate-message')
 
 const calculateBmi = (e) =>{
     e.preventDefault()
@@ -79,13 +116,13 @@ const calculateBmi = (e) =>{
         if(bmi < 18.5){
             // Add color and display message
             calculateMessage.classList.add('color-green')
-            calculateMessage.textContent = 'Your BMI is ${bmi} and you are skinny :('
+            calculateMessage.textContent = `Your BMI is ${bmi} and you are skinny :(`
         } else if(bmi < 25){
             calculateMessage.classList.add('color-green')
-            calculateMessage.textContent = 'Your BMI is ${bmi} and you are healthy :)'
+            calculateMessage.textContent = `Your BMI is ${bmi} and you are healthy :)`
         } else{
             calculateMessage.classList.add('color-green')
-            calculateMessage.textContent = 'Your BMI is ${bmi} and you are overweight :('
+            calculateMessage.textContent = `Your BMI is ${bmi} and you are overweight :(`
         }
     } 
 }
@@ -94,3 +131,4 @@ calculateForm.addEventListener('submit', calculateBmi)
     
 
 /*=============== EMAIL JS ===============*/
+
