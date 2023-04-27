@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613571706105",
+    "project_id": "beingfit-68489",
+    "storage_bucket": "beingfit-68489.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613571706105:android:60fc3145d0c5eda0ef3628",
+        "android_client_info": {
+          "package_name": "com.beingfit.beingfitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613571706105-02bg4iq1qsdc9dejkn4rgv8cn9q2duga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_G90P9HJEOUazRilv0Lxqb2zFoZd4Gs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613571706105-02bg4iq1qsdc9dejkn4rgv8cn9q2duga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
